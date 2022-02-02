@@ -1,0 +1,32 @@
+body {
+  background-color: MistyRose;
+  margin: 0;
+}
+
+p {
+  color: mintcream;
+  background: peachpuff;
+
+  border: 6px dashed powderblue;
+  padding: 40px;
+  padding-left: 10px;
+  margin: 50px;
+}
+
+h1 {
+  color: plum;
+  font-size: 90px;
+  margin-top: 0;
+}
+
+img {
+    max-width: 100%;
+    /* <!-- adjusting the image size on the screen --> */
+    /* width: 200px; */
+    /* height: 600px; */
+}
+
+.special{
+  background: darkseagreen;
+  font-size: 30px;
+}
