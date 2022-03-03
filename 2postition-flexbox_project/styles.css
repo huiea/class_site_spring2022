@@ -1,0 +1,129 @@
+*{
+  box-sizing:border-box;  
+}
+
+body{
+    background-color: rgb(176, 216, 243);
+    margin: 40px;
+    padding:50px;
+}
+
+
+.static {
+    position:relative;
+    background-color:rgb(41, 41, 41);
+    height:650px;
+    width:400px;
+    border-radius:10px;
+    margin:20px auto;
+    
+    
+}
+
+.absolute {
+    position:absolute;
+    background:rgb(83, 83, 83);
+    height:615px;
+    width:375px;
+    border-radius:10px;
+    top:50%;
+    left:50%;
+    z-index:10px;
+    transform:translate(-50%, -50%);
+}
+
+.absolute-inner {
+    position:absolute;
+    background:rgb(224, 250, 253);
+    height:595px;
+    width:360px;
+    border-radius:10px;
+    top:50%;
+    left:50%;
+    z-index:10px;
+    transform:translate(-50%, -50%);
+}
+
+.absolute-top-white-bar {
+    position:absolute;
+    background:rgb(255, 255, 255);
+    height:60px;
+    width:360px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    top:8%;
+    left:50%;
+    z-index:10px;
+    transform:translate(-50%, -50%);
+}
+
+.absolute-middle-text-bar {
+    position:absolute;
+    background:rgb(247, 17, 17);
+    height:60px;
+    width:200px;
+    top:80%;
+    left:50%;
+    z-index:10px;
+    transform:translate(-50%, -50%);
+}
+
+.absolute-bottom-text-bar {
+    position:absolute;
+    background:rgb(153, 153, 153);
+    height:210px;
+    width:360px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    top:80%;
+    left:50%;
+    z-index:10px;
+    transform:translate(-50%, -50%);
+}
+
+/* .different1 {
+    background:red;
+}
+
+.different2 {
+    background:green;
+} */
+
+
+.container {
+    font-family:arial;
+    text-align:center;
+}
+
+
+#speech-bubble{
+    width:120px;
+    height:40px;
+    background:#5ac4ed;
+    position:absolute;
+    left:57%;
+    top:53%;
+    /* -moz-border-radius:10px;
+    -webkit-border-radius:10px; */
+    /* border-radius:10px; */
+    border-bottom-left-radius:20px;
+    border-top-right-radius:20px;
+    border-top-left-radius:20px;
+    transform:translate(-50%, -50%);
+}
+
+#speech-bubble:after{
+    content:"";
+    text-align:center;
+    position:absolute;
+    width:0;
+    height:0;
+    border-left:7px solid transparent;
+    border-top:7px solid #5ac4ed;
+    border-right:7px solid #5ac4ed;
+    border-bottom:7px solid transparent;
+    right:0px;
+    bottom:-12px;
+    transform:rotate(-15deg);
+    margin:13px 0 0 -25px;
+}
