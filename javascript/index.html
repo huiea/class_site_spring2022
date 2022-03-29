@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Javascript</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+
+   <body>
+
+    <div class='marquee draggable'>This is a sentence yerrrrrrrrrrrrrrrrrrrr THE END. This is a sentence yerrrrrrrrrrrrrrrrrrrr and then it REPEATs</div>
+
+       <!-- first we set up the button that is triggering our javascript -->
+<!-- note that the element doesn't need to be a <button> to work -->
+<button onclick="toggle()">Click me...</button>
+
+<!-- the box that we will be altering with our javascript -->
+<!--class="active (adding that will be defalut)"-->
+<div id="box" class="sidebar">
+  the box
+</div>
+
+<div class="draggable">Drag me :o</div>
+   
+
+<script src="jquery-3.6.0.min.js"></script>
+
+<script
+  src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
+  integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY="
+  crossorigin="anonymous"></script>
+
+<script src="jquery.marquee.min.js"></script>
+<script src="functions.js"></script>
+
+
+   </body>
+
+</html>

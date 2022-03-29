@@ -1,0 +1,45 @@
+* {
+    box-sizing:border-box;
+}
+
+button{
+    background-color:rgb(198, 226, 43);
+    border-radius:50%;
+    border:none;
+    cursor:cell;
+    padding:20px;
+}
+
+button:hover{
+    background-color:rgb(247, 71, 223);
+}
+
+.sidebar{
+    background-color:rgb(129, 233, 224);
+    position:fixed;
+    top:0;
+    right:-100px;
+    height:300px;
+    width:100px;
+    padding:20px;
+    transition:right .5s ease-in;
+}
+
+.active {
+    right:0;
+  }
+
+.draggable{
+    cursor:grab;
+    width:300px;
+    height:300px;
+    background-color:rgb(154, 228, 203);
+}
+
+  .marquee {
+    width: 100%; 
+    overflow: hidden;
+    border:1px solid #ccc;
+    font-size:40px;
+    background-color:rgb(169, 129, 233);
+  }
