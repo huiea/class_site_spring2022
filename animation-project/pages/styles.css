@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat+Alternates:wght@700&family=Space+Mono&display=swap');
+
+*{
+    box-sizing:border-box;
+    background-color:rgb(228, 192, 139);
+}
+
+.h1{
+    color:white;
+    text-align:center;
+    font-family: 'Space Mono', monospace;
+}
+

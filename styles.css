@@ -76,13 +76,67 @@ display:inline-block;
     background-color: #3e8e41;
 }
 
+.a:hover{
+    background-color:yellow;
+}
 
-.main-container{
-    background-color: rgb(132, 132, 236);
+
+.image-grid{
+    --gap:16px;
+    --num-cols:4;
+    --row-height:300px;
+
+    box-sizing:border-box;
+    padding:var(--gap);
+
+    display:grid;
+    grid-template-columns:repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+.image-grid > img {
     width:100%;
-    height:100vh; 
-    padding:10px;
-    display:flex;
-    flex-direction:column;
-    gap:10px;
+    height:100%;
+    object-fit:cover;
+    border-radius:40px;
+    position:relative;
+}
+
+/*doesn't work right now*/
+.image-grid > img a:hover {
+    background-color: yellow;
+    animation: move-down .3 linear;
+}
+
+.image-grid-col-2{
+    grid-column:span 2;
+
+}
+
+.image-grid-row-2{
+    grid-row:span 2;
+
+}
+
+/*Anything under 1024px */
+@media screen and (max-width:1024px){
+    .image-grid {
+        --num-cols: 2;
+        --row-height: 200px;
+    }
+}
+
+@keyframes move-down{
+    0%{
+        top:10%;
+    }
+
+    50%{
+        top:35%;
+    }
+
+    0%{
+        top:50%;
+    }
 }

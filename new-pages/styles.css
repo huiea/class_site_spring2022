@@ -1,0 +1,75 @@
+@font-face {
+    font-family:LEMONMILK;
+    src: url('LEMONMILK-Medium.ttf');
+        
+}*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    background-color:rgb(233, 232, 232);
+}
+
+
+header{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding:30px 10%;
+}
+
+.logo{
+    max-width:150px;
+    cursor:pointer;
+    margin-right:auto;
+}
+
+/* dropdwon button */
+.dropdown{
+    font-family:LEMONMILK, sans-seriff;
+    font-weight:500;
+    font-size:16px;
+    color:black;
+    text-decoration:none;
+    margin-left:20px;
+    padding:9px 15px;
+    background-color:rgb(241, 87, 87);
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    transition:0.3s; 
+}
+
+.dropdown{
+position:relative;
+display:inline-block;
+/* background-color:#9de0ff; */
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background-color:#9de0ff;
+    min-width:160px;
+    box-shadow:0px 8px 16px 0px gray;
+    z-index:1; 
+}
+
+.dropdown-content a{
+    color:black;
+    transition:0.3s; 
+    padding:12px 16px;
+    text-decoration:none;
+    display:block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}

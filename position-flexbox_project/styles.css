@@ -1,0 +1,50 @@
+*{
+    box-sizing:border-box;
+}
+
+body {
+    margin:0;
+}
+
+.background-container {
+    background-color:rgb(176, 216, 243);
+    width:100%;
+    height:100vh;
+    padding:10px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+
+}
+
+.center-object {
+    height:90%;
+    display:flex;
+    gap:10px;
+}
+
+
+.outer-item {
+    background-color:rgb(41, 41, 41);
+    height:90%;
+    width:25%;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+}   
+
+.mid-item {
+    background-color:rgb(83, 83, 83);
+    border-radius:10px;
+    width:18%;
+    height:85%;
+}
+
+.center-item{
+    background-color:aliceblue;
+    border-radius:10px;
+    width:15%;
+    height: 70%;
+}

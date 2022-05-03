@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat+Alternates:wght@700&family=Space+Mono&display=swap');
+
+*{
+    box-sizing:border-box;
+    background-color:rgb(9, 44, 49);
+}
+
+.container{
+    margin:300px auto;
+    max-width:100px;
+    min-width:5px;
+    /* width:5%; */
+    transform: translate (-50%, -70%);
+}
+
+.dot{
+    width:20px;
+    height:20px;
+    display:inline-block;
+    border-radius:50%;
+}
+
+.dot1{
+    background-color:blueviolet;
+    animation: jump-up 0.6s 0.1s linear infinite;
+}
+.dot2{
+    background-color:aquamarine;
+    animation: jump-up 0.6s 0.2s linear infinite;
+}
+
+.dot3{
+    background-color:rgb(124, 184, 253);
+    animation: jump-up 0.6s 0.3s linear infinite;
+}
+
+/* a:link{
+    background-color:aquamarine;
+    color:aqua;
+}
+
+a:hover{
+    background-color:rgb(175, 224, 26);
+    color:rgb(221, 228, 22); */
+/* } */
+
+a:link, a:visited{
+    background-color:rgb(3, 129, 141);;
+    color:white;
+    padding:12px 25px;
+    text-align:center;
+    text-decoration:none;
+    display:absolute;
+    justify-content:center;
+    border-radius:30px;
+    margin:auto;
+    position:absolute;
+    top:60%;
+    right:46.5%;
+    font-family: 'Space Mono', monospace;
+    animation:fadein 10s ease-in;
+  
+    
+}
+
+a:hover, a:active{
+    background-color:rgb(46, 232, 136);
+}
+
+
+@keyframes jump-up{
+    50%{
+        transform: translate(0,15px);
+    }
+}
+
+@keyframes fadein{
+    0%{opacity:0}
+    80%{opacity:0}
+    100%{opacity:1}
+}
